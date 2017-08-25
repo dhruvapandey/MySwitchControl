@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "882961529753",
+    "firebase_url": "https://ledbulbcontrol.firebaseio.com",
+    "project_id": "ledbulbcontrol",
+    "storage_bucket": "ledbulbcontrol.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882961529753:android:ab6bb222e9de87a5",
+        "android_client_info": {
+          "package_name": "com.example.dhrpande.switchcontrol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882961529753-t2v9i62htrank29uj9me4nlpfq0mu8nn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi_zPnDSIiqyref61SprR4iCHlBp9nlew"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
