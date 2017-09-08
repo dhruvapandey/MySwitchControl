@@ -10,6 +10,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
+import android.os.*;
 
 // Dhruva
 public class MainActivity extends AppCompatActivity {
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         dbRef.setValue(null);
 
-        if(red_on==0) {
+      /*  if(red_on==0) {
             colour.put("Red", 1);
             red_on=1;
         }
@@ -54,6 +55,21 @@ public class MainActivity extends AppCompatActivity {
             red_on=0;
         }
         dbRef.push().setValue(colour);
+       */
+        colour.put("Red",0);
+        dbRef.push().setValue(colour);
+
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Do something after 5s = 5000ms
+                colour.put("Red",1); // turning U-controller supply off
+                dbRef.push().setValue(colour);
+            }
+        }, 3000);
+
+
     }
     public void onBlueClick(View view) {
 
